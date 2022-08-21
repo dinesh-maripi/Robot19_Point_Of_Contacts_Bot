@@ -94,9 +94,10 @@
       <AssemblyReference>UiPath.Word</AssemblyReference>
       <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
       <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence: Main" sap:VirtualizedContainerService.HintSize="476,885" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Sequence: Main" sap:VirtualizedContainerService.HintSize="678,3411" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_PointOfContacts" />
     </Sequence.Variables>
@@ -105,13 +106,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="434,793" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="268ca44d-e800-479c-b2e8-2f32f9a978d8" Version="V2">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="636,3319" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="268ca44d-e800-479c-b2e8-2f32f9a978d8" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,537" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,3102" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Default="2" Name="Index" />
             </Sequence.Variables>
@@ -120,18 +121,18 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_PointOfContacts]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Project Code' ReferenceName='Column-0' ReferenceIdx='0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Developer Phone Num' ReferenceName='Column-1' ReferenceIdx='1'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Manger Phone Num' ReferenceName='Column-2' ReferenceIdx='2'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' IsDeleted='true' Name='Column-3' ReferenceName='Column-3' ReferenceIdx='3'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;column name='Column-1' attr='text' /&gt;&lt;column name='Column-2' attr='text' /&gt;&lt;column name='Column-3' attr='text' /&gt;&lt;/extract-table&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="0" Version="V1">
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_PointOfContacts]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Project Code' ReferenceName='Column-0' ReferenceIdx='0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Developer Phone Num' ReferenceName='Column-1' ReferenceIdx='1'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Manger Phone Num' ReferenceName='Column-2' ReferenceIdx='2'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' IsDeleted='true' Name='Column-3' ReferenceName='Column-3' ReferenceIdx='3'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='text' /&gt;&lt;column name='Column-1' attr='text' /&gt;&lt;column name='Column-2' attr='text' /&gt;&lt;column name='Column-3' attr='text' /&gt;&lt;/extract-table&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="560,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="0" Version="V1">
               <uix:NExtractData.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="429, 325, 581, 2161" FriendlyName="'Poject CodeDeveloper'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="06429ac6-91a0-4d36-a7ba-1d85b6fdf3ce" InformativeScreenshot="fbfd08e48c3ea6db87a4d5cec8dec7da.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://botsdna.com/poc/' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
               </uix:NExtractData.Target>
             </uix:NExtractData>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[Index]" DataTable="[dt_PointOfContacts]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="586,2189" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[Index]" DataTable="[dt_PointOfContacts]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="560,2614" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,2074" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,2497" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="DevPhoneNum" />
                       <Variable x:TypeArguments="x:String" Name="MgrPhoneNum" />
@@ -145,7 +146,8 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If Condition="[Index = 0]" DisplayName="If: First row" sap:VirtualizedContainerService.HintSize="510,247" sap2010:WorkflowViewState.IdRef="If_1">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,93" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;No of records: &quot;+dt_PointOfContacts.RowCount.ToString]" />
+                    <If Condition="[Index = 0]" DisplayName="If: First row" sap:VirtualizedContainerService.HintSize="484,251" sap2010:WorkflowViewState.IdRef="If_1">
                       <If.Then>
                         <ui:Continue sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Continue_1" />
                       </If.Then>
@@ -159,7 +161,7 @@
                         </Sequence>
                       </If.Else>
                     </If>
-                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="510,162" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="484,162" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                       <ui:MultipleAssign.AssignOperations>
                         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
@@ -189,7 +191,7 @@
                         </scg:List>
                       </ui:MultipleAssign.AssignOperations>
                     </ui:MultipleAssign>
-                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="510,51" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="484,814" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
                       <ui:IfElseIf.ConditionBlocks>
                         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                           <ui:IfElseIfBlock BlockType="If" Condition="[not String.IsNullOrEmpty(DevPhoneNum) And not String.IsNullOrEmpty(MgrPhoneNum)]">
@@ -253,34 +255,50 @@
                       </ui:IfElseIf.ConditionBlocks>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:IfElseIf>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[CurrentRow(0).ToString+&quot;: &quot;+ PointOfContact]" />
-                    <ui:ReadTextFile File="{x:Null}" Content="[ProjectDescription]" DisplayName="Read Text File" FileName="[&quot;Data\Project Description\&quot;+ProjectCode+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="510,79" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-                    <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="[&quot;Data\sample&quot;+Index.ToString+&quot;.docx&quot;]" sap:VirtualizedContainerService.HintSize="510,684" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,93" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[CurrentRow(0).ToString+&quot;: &quot;+ PointOfContact]" />
+                    <ui:ReadTextFile File="{x:Null}" Content="[ProjectDescription]" DisplayName="Read Text File" FileName="[&quot;Data\Project Description\&quot;+ProjectCode+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="484,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+                    <ui:CopyFile ContinueOnError="{x:Null}" Destination="[&quot;Data\Output\&quot;+ProjectCode+&quot;.docx&quot;]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="484,160" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="Data\Project Document.docx" />
+                    <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="[&quot;Data\Output\&quot;+ProjectCode+&quot;.docx&quot;]" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
                       <p:WordApplicationScope.Body>
                         <ActivityAction x:TypeArguments="ui:WordDocument">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,575" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1169" sap2010:WorkflowViewState.IdRef="Sequence_8">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <p:WordAddImage Bookmark="{x:Null}" OccurrenceIndex="{x:Null}" Text="{x:Null}" DisplayName="Add Picture" sap:VirtualizedContainerService.HintSize="434,188" sap2010:WorkflowViewState.IdRef="WordAddImage_1" ImagePath="Data\bots_dna.png" InsertRelativeTo="Document" Position="Start" />
-                            <p:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="WordAppendText_1" Text="[String.Format(&quot;Project Code: {0} {1}Developer Contact: {2} {3}Manager Contact: {4} {5}Project Description: {6}&quot;,ProjectCode, Environment.NewLine, DevPhoneNum, Environment.NewLine, MgrPhoneNum, Environment.NewLine, ProjectDescription)]" />
-                            <p:WordExportToPdf DisplayName="Save Document as PDF" FilePath="[&quot;Data\Output\&quot;+ProjectCode+&quot;.pdf&quot;]" sap:VirtualizedContainerService.HintSize="434,110" sap2010:WorkflowViewState.IdRef="WordExportToPdf_1" />
+                            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="WordReplaceText_1" Replace="[ProjectCode]" ReplaceAll="True" Search="%[ProjectCode]" />
+                            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="WordReplaceText_2" Replace="[If(String.IsNullOrEmpty(MgrPhoneNum), &quot;N/A&quot;, MgrPhoneNum)]" ReplaceAll="True" Search="%[MangerNumber]" />
+                            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="WordReplaceText_3" Replace="[If(String.IsNullOrEmpty(DevPhoneNum), &quot;N/A&quot;, DevPhoneNum)]" ReplaceAll="True" Search="%[Developer Number]" />
+                            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="WordReplaceText_4" ReplaceAll="True" Search="%[Project Description]">
+                              <p:WordReplaceText.Replace>
+                                <InArgument x:TypeArguments="x:String">
+                                  <Literal x:TypeArguments="x:String" Value="" />
+                                </InArgument>
+                              </p:WordReplaceText.Replace>
+                            </p:WordReplaceText>
+                            <p:WordAppendText DisplayName="Append Text" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="WordAppendText_2" NewLine="False" Text="[ProjectDescription]" />
+                            <p:WordExportToPdf DisplayName="Save Document as PDF" FilePath="[&quot;Data\Output\&quot;+ProjectCode+&quot;.pdf&quot;]" sap:VirtualizedContainerService.HintSize="434,111" sap2010:WorkflowViewState.IdRef="WordExportToPdf_1" />
                           </Sequence>
                         </ActivityAction>
                       </p:WordApplicationScope.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                     </p:WordApplicationScope>
-                    <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[&quot;Data\Output\&quot;+ProjectCode+&quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="510,132" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[String.Format(&quot;Project Code: {0} {1}Developer Contact: {2} {3}Manager Contact: {4} {5}Project Description: {6}&quot;,ProjectCode, Environment.NewLine, DevPhoneNum, Environment.NewLine, MgrPhoneNum, Environment.NewLine, ProjectDescription)]" />
-                    <Assign sap:VirtualizedContainerService.HintSize="510,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                    <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="484,80" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[&quot;Data\Output\&quot;+ProjectCode+&quot;.docx&quot;]" />
+                    <Assign sap:VirtualizedContainerService.HintSize="484,61" sap2010:WorkflowViewState.IdRef="Assign_4">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[Counter]</OutArgument>
                       </Assign.To>
@@ -288,7 +306,7 @@
                         <InArgument x:TypeArguments="x:String">[(Index+1).ToString]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <uix:NSelectItem DisplayName="Select Item: " sap:VirtualizedContainerService.HintSize="510,156" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[PointOfContact]" ScopeIdentifier="268ca44d-e800-479c-b2e8-2f32f9a978d8" Version="V1">
+                    <uix:NSelectItem DisplayName="Select Item: " sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[PointOfContact]" ScopeIdentifier="268ca44d-e800-479c-b2e8-2f32f9a978d8" Version="V1">
                       <uix:NSelectItem.Items>
                         <scg:List x:TypeArguments="x:String" Capacity="4">
                           <x:String>SelectType</x:String>
@@ -306,12 +324,12 @@
               </ui:ForEachRow.Body>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ForEachRow>
-            <uix:NClick ClickType="Single" DisplayName="Click: Submit" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="268ca44d-e800-479c-b2e8-2f32f9a978d8" Version="V1">
+            <uix:NClick ClickType="Single" DisplayName="Click: Submit" sap:VirtualizedContainerService.HintSize="560,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="268ca44d-e800-479c-b2e8-2f32f9a978d8" Version="V1">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://botsdna.com/poc/" DesignTimeRectangle="691, 847, 58, 21" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='button' class='' aaname='Submit' check:text='Submit' /&gt;" Guid="f1ea0a8f-22de-48d9-986a-e8ee91b2a519" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD4AAAAZCAYAAABpaJ3KAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHjSURBVFhH7ZhNkoIwEIW5h0A8jjhS5WlcWFyDFZwEy2O44AQuPUJPXkLHNkbGn3GKEVL1Kkl3k/TXhCyIaKRtAj8ej1SWJW02m48TuMAnmwOHc7/f0+l0+jiBC3yyOXBUJvTQpwh8sk3gE3ivGiqiiCKnnKpDKC6gQ0X5I/E9arZ6720T9N3SC+AWOq/bs+0RmDeBt3VO0bqi1ovx9Tz4jcSRxEUxbukXwaXeDx564752hT7+BTU8l7A8rhFjPxW5ln2LFVVr67PryE/rvK5742a/zv8D/AvgWnIjrWIX8veBiwS7Oa9hYNyJaLsC8FqXRf/bo+7JJiqT1boDXBZLAsjx9dwWYhDgLJMEb3zPUeciaZmkhw4uk7yyPwkuAQYLzkdVXkhXF14Xw8fZJOUddQfjxQ4X3Ejeslb+BWeS6nx5Xel474333uqPg7uCypMW0Ivg/1cTeNcm8NGCj/YPzOj+uWVZRlm2pOXyy2i1WlEcJzSbxZQkKaWpMnOMIR7DL+Mw5jnHyGfZjzGLY1lKx6fajj7GurDrHra5mps5xH70IRtk1lF6rJUk2NcqjpFvQtFiYcEBzOAyOZksQCC2QxIUPfxcDBknn4VfQnMskmVYCeTbIL8YbPPHaWoLgJ6llKJvKVrjE52vx94AAAAASUVORK5CYII=" InformativeScreenshot="a923c21e875c231e607797eba87da71e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='https://botsdna.com/poc/' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
               </uix:NClick.Target>
